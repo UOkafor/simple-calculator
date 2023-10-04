@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 300px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#display {
+    width: 95%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-size: 90px;
+    color: white;
+    background-color: black;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.buttons-1 {
+    padding: 4px;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(177, 177, 177);
+    color: black;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.buttons-1:hover {
+    background-color: #3b3b3b;
+}
+.action-buttons {
+    padding:4px;
+    font-size: 50px;
+    border: none;
+    background-color: rgb(255, 177, 32);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.action-buttons:hover {
+    background-color: rgb(145, 138, 136);
+}
+.number-buttons {
+    padding:4px;
+    font-size: 50px;
+    border: none;
+    background-color: rgb(53, 51, 51);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.number-buttons:hover {
+    background-color: rgb(107, 106, 106);
+}
+
+
+.zero{
+    grid-row: 5/6;
+    grid-column: -5/-3;
+    padding:4px;
+    padding-left: 20px;
+    font-size: 50px;
+    border: none;
+    background-color: rgb(53, 51, 51);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 70px;
+    text-align: left;
+}
